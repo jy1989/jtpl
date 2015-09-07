@@ -11,8 +11,8 @@
 	tplstr="usage {v1} -{v2} {v3} <br/>";
 	document.write(jtpl(tplstr,'string','replace1','replace2','replace3'));
 
-	var o={"a":3443431,"b":"replace"};
-	tplstr="object {a} dafsd {b} <br/>";
+	var o={"a":3443431,"b":"replace",c:{c1:"replace-c1",c2:{d1:"replace=d1",d2:{e1:21111}}}};
+	tplstr="object {a} dafsd {b} {c.c1} {c.c2.d1}  {c.c2.d2.e1}<br/>";
 	document.write(jtpl(tplstr,'object',o));
 
   </script>

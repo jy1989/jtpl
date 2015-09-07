@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jtpl.js</title>
+  <script src="jtpl.js"></script>
+    <script>
+	var tplstr='sdjfalsjfslkdjfls  {v1}  sdfaldsfsafa<br/>';
+	document.write(tpl(tplstr,'string','replace\{v1\}'));
+
+	tplstr="usage {v1} -{v2} {v3} <br/>";
+	document.write(tpl(tplstr,'string','replace1','replace2','replace3'));
+
+	var o={"a":3443431,"b":"replace"};
+	tplstr="object {a} dafsd {b} <br/>";
+	document.write(tpl(tplstr,'object',o));
+
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>

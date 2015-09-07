@@ -3,7 +3,7 @@
  * ===========================================================
  * https://github.com/jy1989/jtpl
  * ========================================================== */
-function tpl() {
+function jtpl() {
 		//var result=tpl;
 		var argLen = arguments.length;
 		if (argLen < 3) {

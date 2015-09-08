@@ -5,15 +5,27 @@
   <title>jtpl.js</title>
   <script src="jtpl.js"></script>
     <script>
-	var tplstr='sdjfalsjfslkdjfls  {v1}  sdfaldsfsafa<br/>';
-	document.write(jtpl(tplstr,'string','replace\{v1\}'));
+	var tplstr='<h1>Use {v1} to replace {v2}</h1>';
+	document.write(jy.jtpl(tplstr, '"\{v1\}"',"\{v1\}"));
 
-	tplstr="usage {v1} -{v2} {v3} <br/>";
-	document.write(jtpl(tplstr,'string','replace1','replace2','replace3'));
+	var tplstr='<h2>multi-parameter can be a number:{v1}/boolean:{v2}/string:{v3}</h2>';
+	document.write(jy.jtpl(tplstr, 12345,true,"str"));
 
-	var o={"a":3443431,"b":"replace",c:{c1:"replace-c1",c2:{d1:"replace=d1",d2:{e1:21111}}}};
-	tplstr="object {a} dafsd {b} {c.c1} {c.c2.d1}  {c.c2.d2.e1}<br/>";
-	document.write(jtpl(tplstr,'object',o));
+	var o={
+    "a": 1,
+    "b": "b",
+    "c": {
+        "c1": "c1",
+        "c2": {
+            "d1": "d1",
+            "d2": {
+                "e1": 0
+            }
+        }
+    }
+};
+	tplstr="<h3>json object/{a}/{b}/{c.c1}/{c.c2.d1}/{c.c2.d2.e1}</h3>";
+	document.write(jy.jtpl(tplstr, o));
 
   </script>
 </head>

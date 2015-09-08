@@ -12,7 +12,7 @@ Add jtpl.js to your page.
 
 You can use `jy.jtpl()` in a easy way, here is the code:
 
-#### example 1:
+#### Example 1:
 ```javascript
 var tplstr='<h1>Use {v1} to replace {v2}</h1>';
 document.write(jy.jtpl(tplstr, '"\{v1\}"',"\{v1\}"));
@@ -22,7 +22,7 @@ document.write(jy.jtpl(tplstr, '"\{v1\}"',"\{v1\}"));
 <h1>Use "{v1}" to replace {v1}</h1>
 ```
 ***
-####  example2:
+####  Example 2:
 ```javascript
 var tplstr='<h2>multi-parameter can be a number:{v1}/boolean:{v2}/string:{v3}</h2>';
 document.write(jy.jtpl(tplstr, 12345,true,"str"));
@@ -32,7 +32,7 @@ get the result:
 <h2>multi-parameter can be a number:12345/boolean:true/string:str</h2>
 ```
 ***
-####  example3:
+####  Example 3:
 ```javascript
 	var o={
     "a": 1,

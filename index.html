@@ -8,7 +8,7 @@
 	var tplstr='<h1>Use {v1} to replace {v2}</h1>';
 	document.write(jy.jtpl(tplstr, '"\{v1\}"',"\{v1\}"));
 
-	var tplstr='<h2>multi-parameter can be a number:{v1}/boolean:{v2}/string:{v3}</h2>';
+	tplstr='<h2>multi-parameter can be a number:{v1}/boolean:{v2}/string:{v3}</h2>';
 	document.write(jy.jtpl(tplstr, 12345,true,"str"));
 
 	var o={

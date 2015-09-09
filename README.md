@@ -1,4 +1,4 @@
-# jtpl
+# jtpl.js
 javascript template engine
 
 ##usage
